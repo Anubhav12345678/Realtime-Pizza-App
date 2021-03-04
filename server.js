@@ -4,7 +4,7 @@ const app = express()
 const ejs = require('ejs')
 const path = require('path')
 const expressLayout = require('express-ejs-layouts')
-const PORT = process.env.PORT || 3300
+const PORT = process.env.PORT || 3000
 const mongoose = require('mongoose')
 const session = require('express-session')
 const flash = require('express-flash')
@@ -13,7 +13,8 @@ const passport = require('passport')
 const Emitter = require('events')
 
 // Database connection
-mongoose.connect(process.env.MONGO_CONNECTION_URL, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
+const url = 'mongodb+srv://admin:admin@cluster0.fjskh.mongodb.net/pizza?retryWrites=true&w=majority'
+mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
