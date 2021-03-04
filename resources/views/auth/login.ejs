@@ -1,38 +1,30 @@
 <section class="login flex justify-center pt-24">
-    <div class="w-full max-w-xs">
-        <form action="/login" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="bg-white lg:w-4/12 md:6/12 w-10/12 m-auto my-10 shadow-md">
+        <div class="py-8 px-8 rounded-xl">
+            <h1 class="font-medium text-2xl mt-3 text-center">Login</h1>
+        <form action="/login" method="POST" class="mt-6">
             <% if(messages.error) { %>
             <span class="text-red-500 text-sm"><%= messages.error %></span>
             <% } %>
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            <div class="my-5 text-sm">
+                <label class="block text-black" for="username">
                     Email
                 </label>
                 <input name="email"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full"
                     id="username" type="email" placeholder="Enter your email">
             </div>
-            <div class="mb-6">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            <div class="my-5 text-sm">
+                <label class="block text-black" for="password">
                     Password
                 </label>
                 <input name="password"
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                    id="password" type="password" placeholder="******************">
+                class="rounded-sm px-4 py-3 mt-3 focus:outline-none bg-gray-100 w-full"
+                    id="password" type="password" placeholder="Enter your password">
             </div>
-            <div class="flex items-center justify-between">
-                <button
-                    class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit">
-                    Log In
-                </button>
-                <a class="inline-block align-baseline font-bold text-sm" href="/register">
-                    Don't have account?
-                </a>
-            </div>
+            <button type="submit" class="block text-center text-white bg-gray-800 p-3 duration-300 rounded-sm hover:bg-black w-full">Login</button>
         </form>
-        <p class="text-center text-gray-500 text-xs">
-            &copy;2020 Coder's Gyan. All rights reserved.
-        </p>
+        <p class="mt-12 text-xs text-center font-light text-gray-400"> Don't have an account? <a href="/register" class="text-black font-medium"> Create One </a>  </p> 
     </div>
+  </div>
 </section>
