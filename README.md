@@ -38,6 +38,4 @@ Addition of other entities such as offers, discouts etc
 
 A payment gateway
 
-Payment Acceptance Method
-
 Bill creation System
