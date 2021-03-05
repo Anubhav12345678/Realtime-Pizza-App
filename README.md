@@ -1,45 +1,42 @@
-# Shop
-A website for Bamba Kirana Store
+# Foodeees
+A website for Realtime Delivery of pizzas.
 
 
 # Owner features
-Add others as owners
 
-Add products to shop
+View all current orders.
 
-Add new product category to shop 
-
-Add offers to Store
-
-Open or close the store
+Update the statuses of orders
 
 # Customer features
-View products by categories\n
+Login / Register
 
-See Live shop status\n
+Dynamic addition to cart
 
-See offers on various products
+Track live shop status of order
 
 
 # Product Characteristics
 
-Category
+Type
 
-Picture
+Image
 
 Price
 
-Details
+Size
 
 #  Website Link
 
-https://ltss.000webhostapp.com/shop/index.php
+https://foodeees.herokuapp.com/
 
 
 
 # Features to be added in Version 2
 
-A checkout system
+Addition of other entities such as offers, discouts etc
+
+A payment gateway
 
 Payment Acceptance Method
 
