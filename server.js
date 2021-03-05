@@ -13,7 +13,7 @@ const passport = require('passport')
 const Emitter = require('events')
 
 // Database connection
-const url = 'mongodb+srv://admin:admin@cluster0.fjskh.mongodb.net/pizza?retryWrites=true&w=majority'
+const url = process.env.MONGODB_URI;
 mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
 const connection = mongoose.connection;
 connection.once('open', () => {
