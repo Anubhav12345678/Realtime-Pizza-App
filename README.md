@@ -8,6 +8,11 @@ View all current orders.
 
 Update the statuses of orders
 
+Admin Panel can be veiewed using the following credentials
+
+username:- admin@gmail.com
+password:- 1234
+
 # Customer features
 Login / Register
 
