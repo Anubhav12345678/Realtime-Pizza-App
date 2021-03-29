@@ -1,11 +1,46 @@
-# Realtime pizza app using Node-express-mongo-socket.io
-
-![Realtime Pizza app](https://github.com/codersgyan/realtime-pizza-app-node-express-mongo/blob/master/Screenshot%202020-09-21%20at%2023.03.06.png?raw=true)
-
+# Foodeees
+A website for Realtime Delivery of pizzas.
 
 
+# Owner features
 
-## Installation 
-After download or clone run `npm install` OR `yarn install` to install all the dependancies.
+View all current orders.
 
-🙏 If you find this repo helpful then don't forget to give a start ❇️ to this repository. :)
+Update the statuses of orders
+
+Admin Panel can be veiewed using the following credentials
+
+username:- admin@gmail.com
+password:- 1234
+
+# Customer features
+Login / Register
+
+Dynamic addition to cart
+
+Track live shop status of order
+
+
+# Product Characteristics
+
+Type
+
+Image
+
+Price
+
+Size
+
+#  Website Link
+
+https://foodeees.herokuapp.com/
+
+
+
+# Features to be added in Version 2
+
+Addition of other entities such as offers, discouts etc
+
+A payment gateway
+
+Bill creation System
