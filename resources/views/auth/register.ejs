@@ -3,8 +3,11 @@
         <div class="py-8 px-8 rounded-xl">
             <h1 class="font-medium text-2xl mt-3 text-center">Register</h1>
         <form action="/register" method="POST" class="mt-6">
+            <% if(messages.success) { %>
+                <span class="text-success text-sm"><%= messages.success %></span>
+            <%  } %>
             <% if(messages.error) { %>
-            <span class="text-red-500 text-sm"><%= messages.error %></span>
+                <span class="text-red-500 text-sm"><%= messages.error %></span>
             <% } %>
             <div class="my-5 text-sm">
                 <label class="block text-black" for="username">

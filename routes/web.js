@@ -12,9 +12,13 @@ const admin = require('../app/http/middlewares/admin')
 
 function initRoutes(app) {
     app.get('/', homeController().index)
+    app.get('/contact', (req, res)=>{
+    res.render('contact');
+    })
     app.get('/login', guest, authController().login)
     app.post('/login', authController().postLogin)
     app.get('/register', guest, authController().register)
+    app.get('/verify/:uniqueString', authController().verify)
     app.post('/register', authController().postRegister)
     app.post('/logout', authController().logout)
 

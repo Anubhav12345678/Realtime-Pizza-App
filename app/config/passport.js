@@ -11,6 +11,14 @@ function init(passport) {
             return done(null, false, { message: 'No user with this email' })
         }
 
+        if(!user.confirmed)
+        {
+            console.log("Please confirm your email to login");
+            return done(null, false, { message: 'Please confirm your email to login' })
+        }
+
+        
+
         bcrypt.compare(password, user.password).then(match => {
             if(match) {
                 return done(null, user, { message: 'Logged in succesfully' })
